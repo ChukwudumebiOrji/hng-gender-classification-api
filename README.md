@@ -33,10 +33,13 @@ This project was built for the HNG backend task. The requirement was to create a
 
 ## API Endpoint
 
-- Classification Endpoint
+### Classification Endpoint
+```bash
 GET /api/classify?name=Joy
+```
 
-- Example Success Response
+### Example Success Response
+```json
 {
   "status": "success",
   "data": {
@@ -48,13 +51,15 @@ GET /api/classify?name=Joy
     "processed_at": "2026-04-16T12:00:00Z"
   }
 }
+```
 
-- Example Error Response
+### Example Error Response
+```json
 {
   "status": "error",
   "message": "Name query parameter is required"
-
 }
+```
 
 ---
 
